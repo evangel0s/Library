@@ -1,0 +1,141 @@
+#new-book-btn {
+  width: 100px;
+  background-color: rgb(73, 143, 189);
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 5px;
+  margin: 10px 0 5px 0px;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.comb {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(248, 242, 242);
+  align-items: center;
+text-align: center;
+  padding-left: 20px;
+  box-sizing: border-box;
+  justify-content: center;
+  background-color: rgb(34, 117, 143);
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  display:flex;
+  flex-direction: column;
+  background-color: rgb(140, 160, 167);
+   
+  
+}
+.title {
+  background-color: rgb(133, 241, 255);
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 2 3 rgb(150, 127, 127);
+  align-items: center;
+  padding: 0 2%;
+}
+#new-book-form {
+  width: 27rem;
+  font-size: 21px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(205, 205, 211);
+  text-align: center;
+  border: 2px solid rgb(196, 184, 184);
+  border-radius: 11px;
+  box-shadow: 1px 3px rgb(194, 194, 194);
+  height: 350px;
+  padding: 20px 0;
+  background-color: rgb(240, 227, 227);
+}
+input {
+  height: 30px;
+  width: 400px;
+  border: 1px solid rgb(190, 176, 176);
+  margin-bottom: 10px;
+
+  border-radius: 10px;
+}
+#read {
+  height: 20px;
+}
+
+#add-book {
+  border-radius: 10px;
+  background-color: rgb(55, 60, 63);
+  color: rgb(255, 255, 255);
+  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+}
+#title,
+#author,
+#pages,
+#read {
+  margin-bottom: 20px;
+}
+
+#library {
+  grid-template-columns: repeat( auto-fit, minmax(300px,1fr) );
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  display: grid;
+  grid-column-gap:30px;
+  grid-row-gap:40px;
+  max-width: 1000px;
+  box-sizing: border-box;
+   
+   
+   
+   
+}
+
+#library div {
+  height:300px;
+   border:1px solid rgb(161, 158, 158);
+  background-color: white;
+   
+}
+
+.card-header{
+  
+  display:flex;
+  flex-direction: column;
+   
+  align-items: center;
+}
+
+.both{
+  display:flex;
+  text-align: center;
+  align-items: center;
+  height:20px;
+  border:none;
+
+}
+.toggle-read-btn{
+  width:40px;
+  background-color: rgb(184, 176, 176);
+  
+  font-size: 11px;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  
+  
+}
+.remove-btn{
+  background-color: rgb(184, 176, 176);
+  margin-top:5px
+}
+ 
