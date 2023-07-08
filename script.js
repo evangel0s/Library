@@ -5,25 +5,21 @@ function Book(title, author, pages, read) {
   this.author = author;
   this.pages = pages;
   this.read = read;
-   
 }
 Book.prototype.info = function () {
-   this.read = !this.read;
-   
-}
+  this.read = !this.read;
+};
 function info(index) {
   myLibrary[index].info();
   render();
 }
-
- 
-
 function render() {
   let libraryEl = document.querySelector("#library");
   libraryEl.innerHTML = "";
   for (let i = 0; i < myLibrary.length; i++) {
     let book = myLibrary[i];
     let bookEl = document.createElement("div");
+    bookEl.setAttribute('class','card-header');
     bookEl.innerHTML = `
     <div class='card-header'>
       <h3 class='title'>${book.title}</h3>
@@ -43,7 +39,6 @@ function render() {
 function removeBook(index) {
   myLibrary.splice(index, 1);
   render();
-   
 }
 
 function addBookToLibrary() {
@@ -58,17 +53,16 @@ function addBookToLibrary() {
 let newBookbtn = document.querySelector("#new-book-btn");
 newBookbtn.addEventListener("click", function () {
   let newBookForm = document.querySelector("#new-book-form");
- newBookForm.style.display = "block";
- 
-
-  document.querySelector("#new-book-form").addEventListener("submit", function (event) {
-    event.preventDefault();
-    addBookToLibrary();
-  });
-  newBookForm.onsubmit = function(event){
-    createCard(event);
-  }
-  function createCard(event){
-    event.target.style.display = 'none';
-  }
+  newBookForm.style.display = "block";
 });
+  document.querySelector("#new-book-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+      addBookToLibrary();
+    });
+  newBookForm.onsubmit = function (event) {
+    createCard(event);
+  };
+  function createCard(event) {
+    event.target.style.display = "none";
+  }
+

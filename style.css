@@ -25,22 +25,22 @@ text-align: center;
   padding-left: 20px;
   box-sizing: border-box;
   justify-content: center;
-  background-color: rgb(34, 117, 143);
+  background-color: rgb(137, 224, 255);
 }
 body {
   margin: 0px;
   padding: 0px;
   display:flex;
   flex-direction: column;
-  background-color: rgb(140, 160, 167);
+  background-color: rgb(137, 224, 255);
    
   
 }
 .title {
-  background-color: rgb(133, 241, 255);
+  background-color: rgb(137, 224, 255);
   display: flex;
   justify-content: space-between;
-  box-shadow: 2 3 rgb(150, 127, 127);
+  border-bottom: 2px solid black;
   align-items: center;
   padding: 0 2%;
 }
@@ -138,4 +138,5 @@ input {
   background-color: rgb(184, 176, 176);
   margin-top:5px
 }
+
  
